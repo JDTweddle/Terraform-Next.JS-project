@@ -1,11 +1,11 @@
 # Configure the AWS Provider
 provider "aws" {
-    region = "eu-west-2"
+    region = "your-region"
 } 
 
     # Create an S3 bucket
     resource "aws_s3_bucket" "website_bucket" {
-        bucket = "patchez-s3-static-web-bucket"
+        bucket = "your-bucket-name"
         
         tags = {
             Name = "s3-static-website"
